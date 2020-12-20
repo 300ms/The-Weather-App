@@ -78,8 +78,6 @@ const showMsg = (msg, className) => {
 };
 
 const showRes = (data) => {
-  console.log(data);
-
   const div = `<div class="card text-white bg-dark m-3" style="max-width: 25rem;">
   <div class="card-header">
     ${data.name} 
