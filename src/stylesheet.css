@@ -1,0 +1,41 @@
+body {
+  min-height: 100%;
+  background-color: #55595c !important;
+  overflow-x: hidden;
+}
+
+.main-container {
+  width: 100%;
+  height: 100%;
+}
+
+#location-form {
+  background-color: rgb(179, 179, 179);
+  padding: 10px;
+}
+
+#location-form input {
+  margin: 10px;
+  background-color: rgb(255, 255, 255);
+}
+
+#location-form label {
+  vertical-align: middle;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.card-text {
+  border-top: 1px solid #000;
+  padding-top: 1rem;
+}
