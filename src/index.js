@@ -6,6 +6,16 @@ const apiKey = 'e883aa45abc23c439f559562d45d8863';
 
 const form = document.getElementById('location-form');
 
+function showSpinner() {
+  const loadingDiv = document.getElementById('loading');
+  loadingDiv.style.visibility = 'visible';
+}
+
+function hideSpinner() {
+  const loadingDiv = document.getElementById('loading');
+  loadingDiv.style.visibility = 'hidden';
+}
+
 const getVars = (e) => {
   const city = e.target.cityName.value;
   const state = e.target.stateCode.value;
@@ -64,7 +74,7 @@ const showMsg = (msg, className) => {
   const parent = document.querySelector('.main-container');
   parent.insertBefore(div, rep);
 
-  setTimeout(() => document.querySelector('.alert').remove(), 1000);
+  setTimeout(() => document.querySelector('.alert').remove(), 3000);
 };
 
 const showRes = (data) => {
@@ -178,6 +188,7 @@ const showRes = (data) => {
 
 form.addEventListener('submit', async (e) => {
   e.preventDefault();
+  showSpinner();
   const vars = getVars(e);
   if (checkVars(vars)) {
     const { data, err } = await getRes(vars);
@@ -189,4 +200,5 @@ form.addEventListener('submit', async (e) => {
   } else {
     showMsg('custom error message', 'error');
   }
+  hideSpinner();
 });
