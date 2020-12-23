@@ -67,7 +67,9 @@ repository from github to try it.
 <!-- USAGE EXAMPLES -->
 ## Usage
 
+* When you access the application in first-time and if you allow access to current location, you can see the weather information of your current location coordinates.
 * Write a city name into the form field, you can also use the State and Country codes optionally.
+* Unit type is 'Celcius' in default, but you can also choose 'Fahrenheit' as unit type.
 * Wait for getting and displaying the data.
 
 ## Authors

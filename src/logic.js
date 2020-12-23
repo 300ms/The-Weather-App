@@ -10,7 +10,6 @@ const options = {
 
 class Logic {
   static checkVars(vars) {
-    console.log(vars.unitType);
     if (vars.city && vars.city.length > 1) {
       return true;
     }
@@ -62,7 +61,6 @@ class Logic {
     if (navigator.geolocation) {
       navigator.geolocation.getCurrentPosition(Logic.success, Logic.error, options);
     } else {
-      console.log('not found');
       // x.innerHTML = "Geolocation is not supported by this browser.";
     }
   }
