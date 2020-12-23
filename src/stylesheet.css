@@ -35,13 +35,16 @@ input[type=number] {
   padding-top: 1rem;
 }
 
+.form-group {
+  justify-content: space-around;
+}
+
 /* Absolute Center Spinner */
 .loading {
   position: fixed;
   z-index: 999;
   height: 2em;
   width: 2em;
-  overflow: auto;
   margin: auto;
   top: 0;
   left: 0;
