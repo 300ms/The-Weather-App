@@ -19,9 +19,9 @@
     <a href="https://microverse.org/"><strong> Microverse Page »</strong></a>
     <br />
     <br />
-    <a href="https://300ms.github.io/Todo-List/">View Demo</a>
+    <a href="https://300ms.github.io/The-Weather-App/">View Demo</a>
     ·
-    <a href="https://github.com/300ms/Todo-List/issues">Report Bug & Request Feature</a>
+    <a href="https://github.com/300ms/The-Weather-App/issues">Report Bug & Request Feature</a>
   </p>
 </p>
 
